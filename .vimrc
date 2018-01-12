@@ -35,11 +35,6 @@ set softtabstop=0
 set expandtab
 set smarttab
 
-
-" Color ------------------------------------------------------------------------
-colorscheme mydefault
-
-
 " Setting for NeoBundle --------------------------------------------------------
 filetype off
 if has('vim_starting')
@@ -61,6 +56,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'altercation/vim-colors-solarized'
 
 NeoBundleCheck
 
@@ -76,4 +73,10 @@ noremap ,u <ESC>:Unite -direction=botright -vertical -winwidth=40 -no-quit outli
 
 " for Markdown -----------------------------------------------------------------
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+
+" Color ------------------------------------------------------------------------
+set background=dark
+colorscheme solarized
+
 
